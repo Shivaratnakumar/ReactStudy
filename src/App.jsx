@@ -1,6 +1,7 @@
 import ReactImg from "./assets/react-core-concepts.png";
 import { CORE_CONCEPTS } from "./data";
 import MainGoal from "./MainGoal";
+import User from "./User";
 const reactDescriptions = ["Fundamental", "Crucial", "Core"];
 
 
@@ -48,6 +49,8 @@ function App() {
           </ul>
         </section>
         <h2>Time to get started!</h2>
+        <p>Welcome on board of this course! You got this 💪</p>
+        <User />
       </main>
     </div>
   );
