@@ -1,0 +1,10 @@
+.goals {
+    list-style: none;
+    background-color: rgb(221, 213, 202);
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid #000000;
+    width: 100%;
+}

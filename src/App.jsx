@@ -2,6 +2,7 @@ import ReactImg from "./assets/react-core-concepts.png";
 import { CORE_CONCEPTS } from "./data";
 import MainGoal from "./MainGoal";
 import User from "./User";
+import { CourseGoal } from "./CourseGoal";
 const reactDescriptions = ["Fundamental", "Crucial", "Core"];
 
 
@@ -51,6 +52,22 @@ function App() {
         <h2>Time to get started!</h2>
         <p>Welcome on board of this course! You got this 💪</p>
         <User />
+
+        <p>One course, many goals! 🎯</p>
+        <ul> 
+          <CourseGoal title="Learn React" description="Learn React in-depth and from the ground up" />
+          <br />
+          <CourseGoal title="Practice React" description="Udemy assignment" />
+          <br />
+          <CourseGoal title="Build a project" description="Build a project using React" />
+          <br />
+          <CourseGoal title="Learn Redux" description="Learn Redux in-depth and from the ground up" />
+          <br />
+          <CourseGoal title="Learn React Router" description="Learn React Router in-depth and from the ground up" />
+          <br />
+          <CourseGoal title="Learn React Native" description="Learn React Native in-depth and from the ground up" />
+        </ul>
+        
       </main>
     </div>
   );
