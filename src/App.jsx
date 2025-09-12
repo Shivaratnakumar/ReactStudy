@@ -1,6 +1,8 @@
 import ReactImg from "./assets/react-core-concepts.png";
 import { CORE_CONCEPTS } from "./data";
+import MainGoal from "./MainGoal";
 const reactDescriptions = ["Fundamental", "Crucial", "Core"];
+
 
 function genRandomIndex(max) {  
   return Math.floor(Math.random() * (max + 1));
@@ -11,6 +13,7 @@ function Header() {
   return (
     <header>
         <img src={ReactImg} alt="Stylized atom" />
+        <MainGoal />
         <h1>React Essentials</h1>
         <p>
           {description} React concepts you will need for almost any app you are
@@ -33,7 +36,7 @@ function ConceptItem({image, title, description}) {
 function App() {
   return (
     <div>
-      <Header />
+      <Header />      
       <main>
         <section id="core-concepts">
           <h2>Core Concepts</h2>
