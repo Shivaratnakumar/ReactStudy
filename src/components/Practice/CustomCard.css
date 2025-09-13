@@ -1,0 +1,25 @@
+.custom-card {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 6px;
+    background: linear-gradient(#ff0000, #203031);
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    border: 1px solid #ffffff;
+  }
+  
+  .custom-card h3 {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #e5d9f1;
+  }
+  
+  .custom-card p {
+    margin: 0.5rem 0;
+  }
+  
+  .custom-card a {
+    color: #b3f4f6;
+    text-decoration: none;
+  }

@@ -1,39 +1,11 @@
-import ReactImg from "./assets/react-core-concepts.png";
 import { CORE_CONCEPTS } from "./data";
-import MainGoal from "./MainGoal";
-import User from "./User";
-import { CourseGoal } from "./CourseGoal";
-const reactDescriptions = ["Fundamental", "Crucial", "Core"];
+import User from "./components/Practice/User";
+import { CourseGoal } from "./components/Practice/CourseGoal";
+import CustomCard from "./components/Practice/CustomCard";
+import Header from "./components/Header/Header";
+import ConceptItem from  "./components/CoreConcept/CoreConcept";
+import TabButton from "./components/TabButton";
 
-
-function genRandomIndex(max) {  
-  return Math.floor(Math.random() * (max + 1));
-}
-
-function Header() {
-  const description = reactDescriptions[genRandomIndex(reactDescriptions.length - 1)];
-  return (
-    <header>
-        <img src={ReactImg} alt="Stylized atom" />
-        <MainGoal />
-        <h1>React Essentials</h1>
-        <p>
-          {description} React concepts you will need for almost any app you are
-          going to build!
-        </p>
-      </header>
-  );
-}
-
-function ConceptItem({image, title, description}) {
-  return (
-    <li>
-      <img src={image} alt={title} />
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </li>
-  );
-}
 
 function App() {
   return (
@@ -49,8 +21,20 @@ function App() {
             <ConceptItem {...CORE_CONCEPTS[3]} />
           </ul>
         </section>
-        <h2>Time to get started!</h2>
-        <p>Welcome on board of this course! You got this 💪</p>
+        <section id="examples">
+          <h2>Examples</h2>
+          <menu>
+            <TabButton>Components</TabButton>
+            <TabButton>JSX</TabButton>
+            <TabButton>Props</TabButton>
+            <TabButton>State</TabButton>
+          </menu>
+        </section>
+        <CustomCard name="Custom Card">
+          <p>This is a custom card</p>
+        </CustomCard>
+        {/* <h2>Time to get started!</h2> */}
+        {/* <p>Welcome on board of this course! You got this 💪</p>
         <User />
 
         <p>One course, many goals! 🎯</p>
@@ -66,7 +50,7 @@ function App() {
           <CourseGoal title="Learn React Router" description="Learn React Router in-depth and from the ground up" />
           <br />
           <CourseGoal title="Learn React Native" description="Learn React Native in-depth and from the ground up" />
-        </ul>
+        </ul> */}
         
       </main>
     </div>
