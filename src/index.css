@@ -157,3 +157,25 @@ main h2 {
   font-size: 1.25rem;
   text-align: center;
 }
+
+#content {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: linear-gradient(#1b62cc, #5b6d66);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+input, textarea {
+  font: inherit;
+  padding: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #9c632d;
+  background: #e5e8e7;
+  width: 100%;
+  margin: 1rem 0;
+}

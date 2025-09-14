@@ -1,13 +1,7 @@
-import User from "./components/Practice/User";
-import { CourseGoal } from "./components/Practice/CourseGoal";
-import CustomCard from "./components/Practice/CustomCard";
 import Header from "./components/Header/Header";
-import ConceptItem from  "./components/CoreConcept/CoreConcept";
-import TabButton from "./components/TabButton";
-import {useState, Fragment} from "react";
-import {EXAMPLES} from "./data";
 import CoreConcepts from "./components/CoreConcepts/CoreConcepts";
 import Examples from "./components/Examples/Examples";
+import Input from "./components/Practice/Input";
 
 
 function App() {
@@ -39,7 +33,10 @@ function App() {
           <br />
           <CourseGoal title="Learn React Native" description="Learn React Native in-depth and from the ground up" />
         </ul> */}
-        
+        <div id="content">
+          <Input type="text" placeholder="Your name" />
+          <Input richText placeholder="Your message" />
+        </div>
       </main>
     </>
   );
