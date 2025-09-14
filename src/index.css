@@ -9,7 +9,12 @@ html {
   line-height: 1.5;
 
   color: #ebe7ef;
-  background: radial-gradient(#280a48, #20043d);
+  background: 
+    url('https://c4.wallpaperflare.com/wallpaper/111/745/193/reactjs-javascript-programming-programming-language-hd-wallpaper-preview.jpg'),
+    radial-gradient(#2f5580, #20043d);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
